@@ -1,0 +1,65 @@
+<table id="movie-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Release Date</th>
+        <th>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>RRR</td>
+        <td>2022</td>
+        <td>S.S.Rajamouli</td>
+      </tr>
+      <tr>
+        <td>Pushpa</td>
+        <td>2021</td>
+        <td>Sukumar</td>
+      </tr>
+      <tr>
+        <td>Bahubali 2</td>
+        <td>2018</td>
+        <td>S.S.Rajamouli</td>
+      </tr>
+      <tr>
+        <td>Vikram</td>
+        <td>2022</td>
+        <td>Lokesh kanagaraj</td>
+      </tr>
+      <tr>
+        <td>Avatar 2</td>
+        <td>2022</td>
+        <td>James Cameron</td>
+      </tr> 
+      <tr>
+        <td>John wick 4</td>
+        <td>2023</td>
+        <td>Chad Stahelski </td>
+      </tr> 
+      <tr>
+        <td>Top Gun: Maverick</td>
+        <td>2022</td>
+        <td>Joseph Kosinski</td>
+      </tr>
+       <tr>
+        <td>Avengers:EndGame </td>
+        <td>2019</td>
+        <td> Joe Russo</td>
+      </tr>
+      <script>
+        $(document).ready(function() {
+  $("#movie-table tbody tr").each(function() {
+    // Get the title and release date for the current movie
+    var title = $(movie-table).find("td:nth-child(1)").text();
+    var releaseDate = $(movie-table).find("td:nth-child(2)").text();
+    
+    // Output the movie information to the console
+    console.log("Title: " + title + ", Release Date: " + releaseDate);
+  });
+});
+
+      </script>
+    </tbody>
+  </table>
+  
